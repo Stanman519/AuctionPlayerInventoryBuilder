@@ -14,7 +14,8 @@ public class PlayerInventoryBuilderApplication {
 		
 		BasicDataSource dataSource = new BasicDataSource();
 		dataSource.setUrl("jdbc:postgresql://localhost:5432/startuptest");
-		dataSource.setUsername("student");
+		dataSource.setUsername("postgres");
+		dataSource.setPassword("holden");
 		
 		
 		InventoryManager inventory = new InventoryManager(dataSource);
